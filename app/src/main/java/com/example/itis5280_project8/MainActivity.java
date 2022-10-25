@@ -192,8 +192,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<ItemResponse> call, Response<ItemResponse> response) {
                 ItemResponse itemResponse = response.body();
-                itemResponse.g
-//                items = new ArrayList<>(Arrays.asList(itemResponse.getItemsArray()));
+                items = new ArrayList<>(Arrays.asList(itemResponse.getItemsArray()));
+                Log.d(TAG, "items " + items.toString());
 //                PutDataIntoRecyclerView(items);
             }
 
